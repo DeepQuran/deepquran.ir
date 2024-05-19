@@ -1,0 +1,37 @@
+/* Define the custom font */
+@font-face {
+  font-family: 'Iran';
+  src: url('../css/fonts/iran.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply the custom font to the body */
+body {
+  font-family: 'Iran', sans-serif;
+}
+
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.navbar-brand-center {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  color: #dac0a3;
+}
+
+.icon-image {
+  height: 40px;
+  width: auto;
+}
+
+.logo-color-dark {
+  color: #dac0a3;
+}
+
+.logo-color-light {
+  color: #f8f0e5;
+}
