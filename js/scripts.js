@@ -77,7 +77,7 @@ document.querySelector("#toggleLanguage").addEventListener("click", () => {
   const currentLang = document.documentElement.lang;
   const newLang = currentLang === "fa" ? "en" : "fa";
   document.documentElement.lang = newLang;
-  window.location.href = newLang === "fa" ? "index_fa.html" : "index.html";
+  window.location.href = newLang === "fa" ? "../fa/index.html" : "../en/index.html";
 });
 
 // Initialize theme on page load

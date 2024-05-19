@@ -1,7 +1,7 @@
 /* Define the custom font */
 @font-face {
   font-family: 'Iran';
-  src: url('../css/fonts/iran.ttf') format('truetype');
+  src: url('../assets/fonts/iran.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
