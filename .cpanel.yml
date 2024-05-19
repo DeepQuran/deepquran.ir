@@ -1,5 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/pnafitrz/public_html/
-    - /bin/cp -R images $DEPLOYPATH
+    - export DEPLOY_PATH=/home/pnafitrz/public_html
+    - echo "Deploying application to $DEPLOY_PATH"
+    - /bin/cp -R * $DEPLOY_PATH
+    - echo "Deployment complete."
