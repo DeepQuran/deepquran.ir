@@ -1,1 +1,14 @@
 DirectoryIndex fa/index.html
+
+RewriteEngine On
+RewriteBase /
+
+# Redirect requests to the 'fa' directory
+RewriteRule ^research/(.*)$ fa/research/$1 [L]
+
+# Redirect requests to the 'en' directory if needed
+RewriteRule ^en/research/(.*)$ en/research/$1 [L]
+
+# Ensure any other language-specific paths are also properly redirected
+RewriteRule ^fa/research/(.*)$ fa/research/$1 [L]
+RewriteRule ^en/research/(.*)$ en/research/$1 [L]
