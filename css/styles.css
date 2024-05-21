@@ -35,3 +35,8 @@ body.dark-theme {
 .logo-color-light {
   color: #f8f0e5;
 }
+
+.accordion-button::after {
+  margin-left:0!important;
+  margin-right:auto;
+}
