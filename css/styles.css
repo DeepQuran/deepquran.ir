@@ -40,3 +40,9 @@ body.dark-theme {
   margin-left:0!important;
   margin-right:auto;
 }
+
+p {
+  line-height: 1.7;
+  text-align: justify;
+  text-justify: inter-word;
+}
