@@ -96,26 +96,27 @@
     <!-- content -->
     <div class="container mt-5">
       <h1 class="text-warning text-center pb-3">اسم</h1>
-      <!-- 1 -->
-      <div class="accordion accordion-flush mb-1" id="itm1">
+
+      <div class="accordion my-3" id="acco1">
+        <!-- itm1 -->
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button
-              class="accordion-button collapsed border border-2 rounded"
+              class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#itmBody"
+              data-bs-target="#itm1"
               aria-expanded="false"
-              aria-controls="itmBody"
+              aria-controls="itm1"
             >
               <span class="text-info px-1">بسم الله</span> یعنی
               <span class="text-info px-1">به نام خدا</span>؟
             </button>
           </h2>
           <div
-            id="itmBody"
+            id="itm1"
             class="accordion-collapse collapse"
-            data-bs-parent="#itm1"
+            data-bs-parent="#acco1"
           >
             <div class="accordion-body">
               <p>
@@ -235,28 +236,26 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- 2 -->
-      <div class="accordion accordion-flush mb-1" id="itm2">
+        <!-- itm2 -->
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button
-              class="accordion-button collapsed border border-2 rounded"
+              class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#itm2Body"
+              data-bs-target="#itm2"
               aria-expanded="false"
-              aria-controls="itm2Body"
+              aria-controls="itm2"
             >
               <span class="text-info px-1">اسم</span> و
               <span class="text-info px-1">آسمون</span>، هم ریشه؟
             </button>
           </h2>
           <div
-            id="itm2Body"
+            id="itm2"
             class="accordion-collapse collapse"
-            data-bs-parent="#itm2"
+            data-bs-parent="#acco1"
           >
             <div class="accordion-body">
               <p>
@@ -537,9 +536,11 @@
                 />
               </div>
 
-              <h3 class="p-1 mt-5 text-center rounded text-bg-warning">
-                تمرین تفکر، بجای تعصب
-              </h3>
+              <div class="col-12 d-flex justify-content-center mt-3">
+                <div class="card px-5 pt-2 my-3 text-bg-warning">
+                  <h3 class="text-center">تمرین تفکر، بجای تعصب</h3>
+                </div>
+              </div>
               <p class="pt-1">
                 اگر انگلیسی تون خوبه، این کلیپ از آقای Robert Schlema (با اسم
                 مستعار Mar Mari Emmanuel) رو نگاه کنین. همون کشیش استرالیایی که
@@ -579,7 +580,7 @@
                 </div>
               </div>
 
-              <p class="text-bg-secondary text-center rounded p-1">
+              <p class="text-bg-secondary text-center rounded p-1 my-3">
                 از اینجا به بعد رو، بعد از دیدن ویدیو، مطالعه کنین
               </p>
 
@@ -590,7 +591,7 @@
                 <span class="text-info">عِيسَى ابْنُ مَرْيَمَ</span>
                 <span class="text-bg-success">رَسُولُ اللَّه</span>ِ
                 وَكَلِمَتُهُ أَلْقَاهَا إِلَى مَرْيَمَ
-                <span class="text-info">وَرُوحٌ مِنْهُ</span>                
+                <span class="text-info">وَرُوحٌ مِنْهُ</span>
               </p>
               <br />
               <p>
@@ -607,7 +608,6 @@
                 class="card border-2 border-secondary border-opacity-50 mb-2 p-3"
               >
                 <figure class="text-center mb-2">
-
                   <figcaption class="blockquote-footer mt-2">
                     ای اهل کتاب غُلُو نکنید در دینتان، و نگوئید بر خدا مگر حق.
                     همانا مسیح عیسی ابن مریم رسول خدا و کلمۀ اوست افکندیمش بر
@@ -625,14 +625,23 @@
                 </figure>
               </div>
 
-              <h6 class="text-bg-secondary text-center rounded mt-4 p-1">سوالات</h6>
-              <div class="row">
-                <ol class="list-group list-group-numbered">
-                  <li class="list-group-item">
+              <ol class="list-group my-3 px-0">
+                <!-- header -->
+                <li class="list-group-item text-bg-secondary">
+                  <h3 class="text-center rounded my-1">سوالات</h3>
+                </li>
+                <!-- 1 -->
+                <li class="list-group-item">
+                  <p class="text-body">
+                    <span class="text-warning">1.</span>
                     خودتون متوجه شدین کدوم قسمت آیه رو در خلال خوندن حذف کرد؟ یا
                     انقدر تحت تاثیر سخنرانی بودین، که دقت نکردین و باور کردین؟
-                  </li>
-                  <li class="list-group-item">
+                  </p>
+                </li>
+                <!-- 2 -->
+                <li class="list-group-item">
+                  <p class="text-body">
+                    <span class="text-warning">2.</span>
                     یه جا دیگه اشاره میکنه خدا (عیسی) اهل عشق و کلامه (منطق)، نه
                     جنگ و شمشیر (به شیوه محمد و اسلام). آیا شما انجیل رو خوندین؟
                     میدونین طبق انجیل، چه تعداد آدم به فرمان خدا تو جنگها به دست
@@ -644,28 +653,425 @@
                       href="https://dwindlinginunbelief.blogspot.com/2010/04/drunk-with-blood-gods-killings-in-bible.html"
                       >لینک</a
                     >)
-                  </li>
-                  <li class="list-group-item">
+                  </p>
+                </li>
+                <!-- 3 -->
+                <li class="list-group-item">
+                  <p class="text-body">
+                    <span class="text-warning">3.</span>
                     آیا وقتی یه ویروس به بدن شما وارد میشه، با عشق و محبت و منطق
                     کلامی، دفعش میکنین؟ یا گلبول های سفید خون شما تا پای جون
                     میجنگن، میکُشن و کُشته میشن، تا حیات درازمدت بدن حفظ بشه؟
-                  </li>
-                  <li class="list-group-item">
+                  </p>
+                </li>
+                <!-- 4 -->
+                <li class="list-group-item">
+                  <p class="text-body">
+                    <span class="text-warning">4.</span>
                     چه سوالات دیگه ای در خلال ویدیو دیدین، که جا داره دربارش
                     شخصا تحقیق کنین، یا سوال کنین؟
-                  </li>
-                  <li class="list-group-item">
+                  </p>
+                </li>
+                <!-- 5 -->
+                <li class="list-group-item">
+                  <p class="text-body">
+                    <span class="text-warning">5.</span>
                     چقدر حق میدین به یک مسلمون، که اعتقاداتش سطحی و گوشیه، نه
                     عمقی و عقلی، که پیرو این سخنرانی، به قرآن و محمد و اسلام شک
                     کنه؟
-                  </li>
-                  <li class="list-group-item">
+                  </p>
+                </li>
+                <!-- 6 -->
+                <li class="list-group-item">
+                  <p class="text-body">
+                    <span class="text-warning">6.</span>
                     چقدر حق میدین به یک مسیحی، که اعتقاداتش سطحی و گوشیه، نه
                     عمقی و عقلی، که پیرو این سخنرانی، به خدا بودن عیسی، و دروغ
                     بودن محمد یقین کنه؟
-                  </li>
-                </ol>
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- itm3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#itm3"
+              aria-expanded="false"
+              aria-controls="itm3"
+            >
+              ذکر <span class="text-info px-1">اسم خدا</span> ،
+              <span class="text-info px-1">خوراکی</span>؟
+            </button>
+          </h2>
+          <div
+            id="itm3"
+            class="accordion-collapse collapse"
+            data-bs-parent="#acco1"
+          >
+            <div class="accordion-body">
+              <p>
+                <span class="text-info">بسم الله</span> گفتن، موقع سَر بُریدن
+                مرغ و گوسفند (<span class="text-info">ذبح شرعی</span>) چرا موجب
+                حلال یا حروم شدن اون گوشت میشه؟
+              </p>
+
+              <div
+                class="card border-2 border-secondary border-opacity-50 my-3 px-3 pt-2"
+              >
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="text-center">
+                      <span class="text-info">فَكُلُوا</span> مِمَّا
+                      <span class="text-info"
+                        >ذُكِرَ اسْمُ اللَّهِ عَلَيْهِ</span
+                      >
+                      إِنْ كُنْتُمْ بِآيَاتِهِ مُؤْمِنِينَ
+                    </p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mt-2">
+                    پس <span class="text-info">بخورید</span> از آنچه
+                    <span class="text-info">ذکر شده اسم خدا بر آن</span>، اگر
+                    هستید به آیاتش مومنان
+                  </figcaption>
+                  <a
+                    href="http://deepquran.com/6:118:4"
+                    target="_blank"
+                    class="btn btn-sm btn-outline-success"
+                    >6:118</a
+                  >
+                </figure>
               </div>
+
+              <div class="row my-3">
+                <div class="container">
+                  <div class="card mt-4">
+                    <div class="card-header">
+                      <p class="text-center">حکم بسم الله هنگام ذبح شرعی</p>
+                    </div>
+                    <div class="card-body">
+                      <audio controls class="w-100">
+                        <source
+                          src="../../../assets/mp3/bismillah.mp3"
+                          type="audio/mpeg"
+                        />
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row my-3">
+                <div class="container">
+                  <div class="card mt-4">
+                    <div class="card-header">
+                      <div class="row">
+                        <img
+                          src="../../../assets/img/word/zebh.png"
+                          class="img-fluid"
+                          alt="zebh"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <audio controls class="w-100">
+                        <source
+                          src="../../../assets/mp3/zebh.mp3"
+                          type="audio/mpeg"
+                        />
+                      </audio>
+                    </div>
+                    <div class="card-footer text-center">
+                      <a
+                        class="btn btn-outline-secondary"
+                        href="https://www.aparat.com/v/y378263?t=323"
+                      >
+                        ویدیوی کامل
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                با این تفاسیر، آیا اگه موقع
+                <span class="text-info">ذبح خوک</span>، احکام شرعی کاملا رعایت
+                بشه، رو به قبله با <span class="text-info">بسم الله</span> ذبح
+                بشه، گوشت اون خوک حلال میشه؟
+              </p>
+
+              <p>
+                فقط <span class="text-info">خوردن</span> خوراکی های حروم از نظر
+                خدا اشکال داره، یا <span class="text-info">نخوردن</span> خوراکی
+                های حلال هم همینطور؟
+              </p>
+
+              <div
+                class="card border-2 border-secondary border-opacity-50 my-3 px-3 pt-2"
+              >
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="text-center">
+                      وَمَا لَكُمْ
+                      <span class="text-info">أَلَّا تَأْكُلُوا</span> مِمَّا
+                      <span class="text-info">ذُكِرَ اسْمُ اللَّهِ</span>
+                      عَلَيْهِ وَقَدْ فَصَّلَ لَكُمْ مَا حَرَّمَ عَلَيْكُمْ
+                    </p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mt-2">
+                    و چیست شما را،
+                    <span class="text-info">آیا نمی خورید</span> از آنچه
+                    <span class="text-info">ذکر شده اسم خدا</span> بر آن. و
+                    همانا تفصیل کرد بر شما آنچه حرام شد برایتان
+                  </figcaption>
+                  <a
+                    href="http://deepquran.com/6:119:7"
+                    target="_blank"
+                    class="btn btn-sm btn-outline-success"
+                    >6:119</a
+                  >
+                </figure>
+              </div>
+
+              <p>چیا بود که حرام شده بر ما؟</p>
+
+              <div
+                class="card border-2 border-secondary border-opacity-50 my-3 px-3 pt-2"
+              >
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="text-center">
+                      إِنَّمَا <span class="text-info">حَرَّمَ</span> عَلَيْكُمُ
+                      <span class="text-info">الْمَيْتَةَ</span> وَ<span
+                        class="text-info"
+                        >الدَّمَ</span
+                      >
+                      وَ<span class="text-info">لَحْمَ الْخِنْزِيرِ</span> وَمَا
+                      أُهِلَّ بِهِ
+                      <span class="text-info">لِغَيْرِ اللَّهِ</span>
+                    </p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mt-2">
+                    همانا <span class="text-info">حرام شد</span> بر شما
+                    <span class="text-info">مُردار</span> و
+                    <span class="text-info">خون</span> و
+                    <span class="text-info">گوشت خوک</span> و آنچه هلهله شد به
+                    آن <span class="text-info">بر غیر خدا</span>
+                  </figcaption>
+                  <a
+                    href="http://deepquran.com/2:173:2"
+                    target="_blank"
+                    class="btn btn-sm btn-outline-success"
+                    >2:173</a
+                  >
+                </figure>
+              </div>
+
+              <p>
+                پس آیا گوشت خر و سگ و مار و ملخ که تو بعضی کشورای شرقی میخورن
+                حلاله، چون تو لیست حرام ها نیست؟ و گوشت مرغ و گاو و گوسفند که تو
+                بعضی کشورای غربی میخورن حرامه، چون موقع ذبحش بسم الله گفته نشده؟
+              </p>
+              <p>
+                آیا دقیقا <span class="text-info">موقع ذبح</span> باید بسم الله
+                گفت، یا <span class="text-info">بعدش</span> هم اگه باشه مشکلی
+                نداره؟
+              </p>
+
+              <div
+                class="card border-2 border-secondary border-opacity-50 my-3 px-3 pt-2"
+              >
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="text-center">
+                      <span class="text-info">فَكُلُوا</span> مِمَّا أَمْسَكْنَ
+                      عَلَيْكُمْ وَ<span class="text-info"
+                        >اذْكُرُوا اسْمَ اللَّهِ</span
+                      >
+                      عَلَيْهِ
+                    </p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mt-2">
+                    <span class="text-info">پس بخورید</span> از آنچه امساک کردند
+                    (<span class="text-info">سگان شکاری</span>) برای شما، و
+                    <span class="text-info">ذکر کنید اسم خدا</span> را بر آن
+                  </figcaption>
+                  <a
+                    href="http://deepquran.com/5:4:23"
+                    target="_blank"
+                    class="btn btn-sm btn-outline-success"
+                    >5:4</a
+                  >
+                </figure>
+              </div>
+
+              <p>
+                چرا اصلا خوردن چیزی که اسم خدا روش ذکر نشده انقدر مهمه که میتونه
+                آدم رو <span class="text-info">فاسق</span> و
+                <span class="text-info">اولیاء شیاطین</span>
+                و <span class="text-info">مُشرک به خدا</span> کنه؟!
+              </p>
+
+              <div
+                class="card border-2 border-secondary border-opacity-50 my-3 px-3 pt-2"
+              >
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="text-center">
+                      وَلَا تَأْكُلُوا مِمَّا
+                      <span class="text-info"
+                        >لَمْ يُذْكَرِ اسْمُ اللَّهِ عَلَيْهِ</span
+                      >
+                      وَإِنَّهُ <span class="text-info">لَفِسْقٌ</span> وَإِنَّ
+                      <span class="text-info">الشَّيَاطِينَ</span> لَيُوحُونَ
+                      إِلَىٰ أَوْلِيَائِهِمْ لِيُجَادِلُوكُمْ وَإِنْ
+                      أَطَعْتُمُوهُمْ إِنَّكُمْ
+                      <span class="text-info">لَمُشْرِكُونَ</span>
+                    </p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mt-2">
+                    و نخورید از آنچه
+                    <span class="text-info">ذکر نمیشود اسم خدا بر آن</span>، و
+                    همانا آنست قطعا <span class="text-info">فسقی</span>. و همانا
+                    <span class="text-info">شیاطین</span> بسی وحی میکنند بر
+                    اولیائشان، تا مجادله کنندتان. و اگر اطاعتشان کردید، همانا
+                    شمایید قطعا <span class="text-info">مشرکان</span>
+                  </figcaption>
+                  <a
+                    href="http://deepquran.com/6:121:6"
+                    target="_blank"
+                    class="btn btn-sm btn-outline-success"
+                    >6:121</a
+                  >
+                </figure>
+              </div>
+
+              <p>
+                این <span class="text-info">بسم الله</span> گفتن که انقدر مهمه،
+                چه مناسک و مراسمی داره؟ آیا لازمه عربی بگیم یا به زبون خودمون هم
+                میشه؟ فقط شامل ذبح پرنده و چهارپاست، یا هر رزقی خدا بهمون داده؟
+              </p>
+
+              <div
+                class="card border-2 border-secondary border-opacity-50 my-3 px-3 pt-2"
+              >
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="text-center">
+                      وَلِكُلِّ أُمَّةٍ جَعَلْنَا
+                      <span class="text-info">مَنْسَكًا</span> لِيَذْكُرُوا
+                      اسْمَ اللَّهِ عَلَىٰ
+                      <span class="text-info">مَا رَزَقَهُمْ</span>
+                    </p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mt-2">
+                    و برای هر امتی قرار دادیم
+                    <span class="text-info">مناسکی</span>، تا ذکر کنند اسم خدا
+                    بر <span class="text-info">آنچه رزقشان داد</span>
+                  </figcaption>
+                  <a
+                    href="http://deepquran.com/22:34:6"
+                    target="_blank"
+                    class="btn btn-sm btn-outline-success"
+                    >22:34</a
+                  >
+                </figure>
+              </div>
+
+              <div
+                class="card border-2 border-secondary border-opacity-50 my-3 px-3 pt-2"
+              >
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="text-center">
+                      لِيَشْهَدُوا
+                      <span class="text-info">مَنَافِعَ لَهُمْ</span>
+                      وَيَذْكُرُوا اسْمَ اللَّهِ فِي أَيَّامٍ مَعْلُومَاتٍ
+                      عَلَىٰ <span class="text-info">مَا رَزَقَهُمْ</span>
+                    </p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mt-2">
+                    تا شاهد شوند <span class="text-info">منافعی برایشان</span> و
+                    ذکر کنند اسم خدا در ایامی معلوم، بر
+                    <span class="text-info">آنچه رزقشان داد</span>
+                  </figcaption>
+                  <a
+                    href="http://deepquran.com/22:28:5"
+                    target="_blank"
+                    class="btn btn-sm btn-outline-success"
+                    >22:28</a
+                  >
+                </figure>
+              </div>
+
+              <p>
+                فراموش نکنیم هدف اصلی ما طرح سوال های عمومیه، نه اعلام جواب های
+                اختصاصی. چون جواب من در حد عقل و درک خودمه، جواب شما و دیگران هم
+                همینطور (رجوع به
+                <a class="link-primary" href="../../about.html">مشاهده</a>).
+              </p>
+
+              <div class="col-12 d-flex justify-content-center mt-3">
+                <div class="card px-5 pt-2 my-3 text-bg-warning">
+                  <h3 class="text-center">راهنمایی</h3>
+                </div>
+              </div>
+
+              <ol class="list-group my-3 px-0">
+                <!-- header -->
+                <li class="list-group-item text-bg-secondary">
+                  <h3 class="text-center rounded my-1">
+                    برای رسیدن به جوابها، درک
+                    <span class="text-info">کلمات کلیدی</span> بکار رفته در
+                    سوالها راه گشاست
+                  </h3>
+                </li>
+                <!-- 1 -->
+                <li class="list-group-item">
+                  <p class="text-body">
+                    <span class="text-warning">1.</span>
+                    ذُكِرَ اسْمُ اللَّهِ ؛
+                    <span class="text-info">ذکر</span> چیه؟ یه کلمه یا عبارت،
+                    مثل بسم الله، که با تسبیح یا تمرکز باید چندین بار به زبون
+                    بیاریم تا اثر کنه؟ اگر یک نفر مسلمون لال باشه، نه میتونه ذکر
+                    خدا رو بگه نه ذبح شرعی کنه؟
+                  </p>
+                </li>
+                <!-- 2 -->
+                <li class="list-group-item">
+                  <p class="text-body">
+                    <span class="text-warning">2.</span>
+                    <span class="text-info">اسم</span> چیه؟ اسم خدا یعنی نام
+                    خدا؟ اسم اعظم خدا (مثلا یَهُوَه، یا هو، یا الله) یا هر یک از
+                    اسماء الله؟
+                  </p>
+                </li>
+                <!-- 3 -->
+                <li class="list-group-item">
+                  <p class="text-body">
+                    <span class="text-warning">3.</span>
+                    إِنَّمَا حَرَّمَ عَلَيْكُمُ ؛
+                    <span class="text-info">حرام</span> چیه؟ یه کاری که اگه
+                    انجام بدیم یا یه چیزی که اگه بخوریم، گناه داره؟ خدا ناراحت
+                    میشه؟ ما باید اون دنیا جواب پس بدیم؟
+                  </p>
+                </li>
+                <!-- 4 -->
+                <li class="list-group-item">
+                  <p class="text-body">
+                    <span class="text-warning">4.</span>
+                    <span class="text-info">حلال</span> چیه؟ یه کاری که اگه
+                    انجام بدیم یا یه چیزی که اگه بخوریم، ثواب داره؟ خدا خوشحال
+                    میشه؟ ما اون دنیا مورد تقدیر واقع میشیم؟
+                  </p>
+                </li>
+              </ol>
             </div>
           </div>
         </div>

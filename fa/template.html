@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fa" data-bs-theme="light" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>قرآن عمیق - قالب</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="px-2 navbar navbar-expand-sm bg-dark border-bottom border-body"
+      data-bs-theme="dark"
+    >
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav me-3 me-sm-auto">
+          <li class="me-sm-4 nav-item invisible">
+            <a class="nav-link" href="#" id="toggleLanguage">En</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="toggleTheme">
+              <i class="bi" id="themeIcon"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- content -->
+    <div class="container mt-5 text-center">
+      <!-- عنوان تمام صفحه -->
+      <div class="card p-4 text-bg-success">
+        <h1 class="text-center">قرآن عمیق</h1>
+      </div>
+
+      <!-- عنوان وسط صفحه -->
+      <div class="col-12 d-flex justify-content-center mt-3">
+        <div class="card px-5 pt-2 my-3 text-bg-warning">
+          <h3 class="text-center">تمرین تفکر، بجای تعصب</h3>
+        </div>
+      </div>
+
+      <!-- عنوان رنگی -->
+      <h5 class="text-warning my-3">تعریف مشاهده</h5>
+
+      <!-- عکس معمولی -->
+      <div class="text-center">
+        <img
+          src="../assets/img/about/p1.png"
+          class="img-fluid rounded-5 border border-5"
+          alt="about"
+        />
+      </div>
+
+      <!-- آیه قرآن با ریفرنس -->
+      <div
+        class="card border-2 border-secondary border-opacity-50 my-3 px-3 pt-2"
+      >
+        <figure class="text-center">
+          <blockquote class="blockquote">
+            <p class="text-center">
+              وَلَا تَقْفُ مَا لَيْسَ <span class="text-info">لَكَ</span> بِهِ
+              عِلْمٌ
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer mt-2">
+            و دنبال مکن آنچه نیست <span class="text-info">بر تو</span> به آن
+            علمی
+          </figcaption>
+          <a
+            href="http://deepquran.com/17:36:5"
+            target="_blank"
+            class="btn btn-sm btn-outline-success"
+            >17:36</a
+          >
+        </figure>
+      </div>
+
+      <!-- آیه انجیل با ریفرنس -->
+      <div class="card border-2 border-secondary border-opacity-50 mb-2 p-3">
+        <figure class="text-center mb-2">
+          <blockquote class="blockquote">
+            <h6 class="text-center">
+              In the beginning was the Word, and the Word was with God, and the
+              Word was God
+            </h6>
+          </blockquote>
+
+          <figcaption class="blockquote-footer mt-2">
+            در ابتدا کلمه بود، و کلمه با خدا بود، و کلمه خدا بود.
+          </figcaption>
+          <a
+            href="https://www.biblegateway.com/passage/?search=John+1%3A1&version=NKJV"
+            target="_blank"
+            class="btn btn-sm btn-outline-success"
+            >انجیل John 1:1</a
+          >
+        </figure>
+      </div>
+
+      <!-- دو دکمه وسط صفحه -->
+      <div class="col-12 d-flex justify-content-center gap-5 my-3 p-3">
+        <a
+          href="https://t.me/deepquran_com"
+          target="_blank"
+          class="btn btn-outline-info w-25"
+        >
+          <i class="fab fa-telegram"></i>
+          تلگرام
+        </a>
+        <a
+          href="mailto:deepquran.com@gmail.com"
+          target="_blank"
+          class="btn btn-outline-light w-25"
+        >
+          <i class="fa fa-envelope"></i>
+          ایمیل
+        </a>
+      </div>
+
+      <!-- جدول -->
+      <div class="row px-4 py-3">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">کلمه</th>
+              <th scope="col">ریشه</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>
+                <a
+                  class="text-info nav-link"
+                  href="word/esm.html"
+                  id="toggleLanguage"
+                  >اسم</a
+                >
+              </td>
+              <td>سمو</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>
+                <a
+                  class="text-info nav-link disabled"
+                  href="word/gonah.html"
+                  id="toggleLanguage"
+                  >گناه</a
+                >
+              </td>
+              <td>ذنب، جُرم، اثم</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- آکاردئون -->
+      <div class="accordion my-3" id="acco1">
+        <!-- itm1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#itm1"
+              aria-expanded="false"
+              aria-controls="itm1"
+            >
+              آیتم اول
+            </button>
+          </h2>
+          <div
+            id="itm1"
+            class="accordion-collapse collapse"
+            data-bs-parent="#acco1"
+          >
+            <div class="accordion-body">
+              <p>متن مربوط به آیتم اول</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- itm2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#itm2"
+              aria-expanded="false"
+              aria-controls="itm2"
+            >
+              آیتم دوم
+            </button>
+          </h2>
+          <div
+            id="itm2"
+            class="accordion-collapse collapse"
+            data-bs-parent="#acco1"
+          >
+            <div class="accordion-body">
+              <p>متن مربوط به آیتم دوم</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- itm3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#itm3"
+              aria-expanded="false"
+              aria-controls="itm3"
+            >
+              آیتم سوم
+            </button>
+          </h2>
+          <div
+            id="itm3"
+            class="accordion-collapse collapse"
+            data-bs-parent="#acco1"
+          >
+            <div class="accordion-body">
+              <p>متن مربوط به آیتم سوم</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- متن با کادر ساده -->
+      <p class="border rounded p-2">بسم الله الرحمن الرحیم</p>
+
+      <!-- عکس، صوت، لینک به ویدیو -->
+      <div class="row my-3">
+        <div class="container">
+          <div class="card mt-4">
+            <div class="card-header">
+              <div class="row">
+                <img
+                  src="../../../assets/img/jehova.png"
+                  class="img-fluid"
+                  alt="jehova"
+                />
+              </div>
+            </div>
+            <div class="card-body">
+              <audio controls class="w-100">
+                <source
+                  src="../../../assets/mp3/yahowa.mp3"
+                  type="audio/mpeg"
+                />
+              </audio>
+            </div>
+            <div class="card-footer text-center">
+              <a
+                class="btn btn-outline-secondary"
+                href="https://www.jw.org/en/library/videos/Good-News-From-God-Video-Series/video-gods-name/"
+              >
+                ویدیوی کامل
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- لینک ساده -->
+      <a
+        class="link-primary"
+        href="https://dwindlinginunbelief.blogspot.com/2010/04/drunk-with-blood-gods-killings-in-bible.html"
+        >لینک</a
+      >
+
+      <!-- لینک دکمه ادامه -->
+      <a class="btn btn-outline-success" href="fa/research/word/esm.html"
+        >ادامه</a
+      >
+
+      <!-- سوالات -->
+      <ol class="list-group my-3 px-0">
+        <!-- header -->
+        <li class="list-group-item text-bg-secondary">
+          <h3 class="text-center rounded my-1">سوالات</h3>
+        </li>
+        <!-- 1 -->
+        <li class="list-group-item">
+          <p class="text-body">
+            <span class="text-warning">1.</span>
+            سوال اول به این شرح هست
+          </p>
+        </li>
+        <!-- 2 -->
+        <li class="list-group-item">
+          <p class="text-body">
+            <span class="text-warning">2.</span>
+            سوال دوم به این شرح هست
+          </p>
+        </li>
+        <!-- 3 -->
+        <li class="list-group-item">
+          <p class="text-body">
+            <span class="text-warning">3.</span>
+            سوال سوم به این شرح هست
+          </p>
+        </li>
+      </ol>
+    </div>
+
+    <script src="../../js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
