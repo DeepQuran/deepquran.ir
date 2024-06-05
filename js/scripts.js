@@ -77,8 +77,27 @@ document.querySelector("#toggleLanguage").addEventListener("click", () => {
   const currentLang = document.documentElement.lang;
   const newLang = currentLang === "fa" ? "en" : "fa";
   document.documentElement.lang = newLang;
-  window.location.href = newLang === "fa" ? "../index.html" : "../en/index.html";
+  window.location.href =
+    newLang === "fa" ? "../index.html" : "../en/index.html";
 });
 
 // Initialize theme on page load
 initializeTheme();
+
+// i.e quran.html?open=itm3
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the query parameter from the URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const openItem = urlParams.get("open");
+
+  // If the query parameter is present, open the corresponding accordion item
+  if (openItem) {
+    const button = document.getElementById(`btn-${openItem}`);
+    if (button) {
+      button.classList.remove("collapsed");
+      const collapseElement = document.getElementById(openItem);
+      collapseElement.classList.add("show");
+      button.setAttribute("aria-expanded", "true");
+    }
+  }
+});
