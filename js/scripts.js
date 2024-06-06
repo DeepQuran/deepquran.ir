@@ -101,3 +101,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
+
+function copyToClipboard() {
+  const url = window.location.href;
+  navigator.clipboard
+    .writeText(url)
+    .then(() => {
+      alert("لینک کپی شد!");
+    })
+    .catch((err) => {
+      console.error("خطا در کپی لینک: ", err);
+    });
+}
