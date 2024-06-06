@@ -104,12 +104,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function copyToClipboard() {
   const url = window.location.href;
-  navigator.clipboard
-    .writeText(url)
-    .then(() => {
-      alert("لینک کپی شد!");
-    })
-    .catch((err) => {
-      console.error("خطا در کپی لینک: ", err);
-    });
+  const el = document.createElement("textarea");
+  el.value = url;
+  document.body.appendChild(el);
+  el.select();
+  el.setSelectionRange(0, 99999); // For mobile devices
+  document.execCommand("copy");
+  document.body.removeChild(el);
+  alert("لینک کپی شد: " + url);
 }
