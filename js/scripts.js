@@ -111,5 +111,5 @@ function copyToClipboard() {
   el.setSelectionRange(0, 99999); // For mobile devices
   document.execCommand("copy");
   document.body.removeChild(el);
-  alert("لینک کپی شد: " + url);
+  alert("لینک کپی شد!");
 }
