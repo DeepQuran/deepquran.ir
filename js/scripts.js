@@ -84,13 +84,14 @@ document.querySelector("#toggleLanguage").addEventListener("click", () => {
 // Initialize theme on page load
 initializeTheme();
 
-// i.e quran.html?open=itm3
+// i.e quran.html?open=itm3&part=thisPart
 document.addEventListener("DOMContentLoaded", function () {
-  // Get the query parameter from the URL
+  // Get the query parameters from the URL
   const urlParams = new URLSearchParams(window.location.search);
   const openItem = urlParams.get("open");
+  const scrollToPart = urlParams.get("part");
 
-  // If the query parameter is present, open the corresponding accordion item
+  // If the query parameter for opening an item is present, open the corresponding accordion item
   if (openItem) {
     const button = document.getElementById(`btn-${openItem}`);
     if (button) {
@@ -98,6 +99,16 @@ document.addEventListener("DOMContentLoaded", function () {
       const collapseElement = document.getElementById(openItem);
       collapseElement.classList.add("show");
       button.setAttribute("aria-expanded", "true");
+
+      // If the query parameter for scrolling to a part is present, scroll to that part
+      if (scrollToPart) {
+        const partElement = document.querySelector(
+          `#${openItem} [name="${scrollToPart}"]`
+        );
+        if (partElement) {
+          partElement.scrollIntoView({ behavior: "smooth" });
+        }
+      }
     }
   }
 });
