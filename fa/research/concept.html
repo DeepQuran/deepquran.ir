@@ -96,7 +96,7 @@
         طرح سوال و تلاش برای شرح بیشتر برخی <span class="text-info">مفاهیم</span> کلیدی و رایج در قرآن
       </p>
       <div class="row p-4">
-        <table class="table table-striped">
+        <table class="table table-striped sortable">
           <thead>
             <tr>
               <th scope="col"></th>
@@ -247,6 +247,12 @@
       </div>
     </div>
 
+    <script src="../../js/sorttable.js"></script>
+    <script>
+      sorttable.sort_alpha = function (a, b) {
+        return a[0].localeCompare(b[0]);
+      };
+    </script>
     <script src="../../../js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

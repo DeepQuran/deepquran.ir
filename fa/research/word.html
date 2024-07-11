@@ -92,9 +92,12 @@
     <!-- content -->
     <div class="container mt-5">
       <h1 class="text-warning">کلمه</h1>
-      <p>طرح سوال و تلاش برای شرح بیشتر برخی <span class="text-info">کلمات</span> ساده، کلیدی و رایج در قرآن</p>
+      <p>
+        طرح سوال و تلاش برای شرح بیشتر برخی
+        <span class="text-info">کلمات</span> ساده، کلیدی و رایج در قرآن
+      </p>
       <div class="row p-4">
-        <table class="table table-striped">
+        <table class="table table-striped sortable">
           <thead>
             <tr>
               <th scope="col"></th>
@@ -546,9 +549,9 @@
       style="height: 50px"
     >
       <div class="d-flex justify-content-between align-items-center m-3">
-        <button class="btn" onclick="copyToClipboard()">          
+        <button class="btn" onclick="copyToClipboard()">
           <i class="bi bi-share-fill opacity-50"></i>
-        </button>        
+        </button>
         <a
           href="https://www.deepquran.com/"
           class="link-info opacity-50 link-underline-opacity-0 mx-auto"
@@ -557,6 +560,12 @@
       </div>
     </div>
 
+    <script src="../../js/sorttable.js"></script>
+    <script>
+      sorttable.sort_alpha = function (a, b) {
+        return a[0].localeCompare(b[0]);
+      };
+    </script>
     <script src="../../../js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
